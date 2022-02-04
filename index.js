@@ -1,14 +1,16 @@
 // code your solution here
 function saturdayFun (activity ='roller-skate') {
-    console.log(`This Saturday, I want to ${activity}!`);
+    return (`This Saturday, I want to ${activity}!`);
 }
-saturdayFun("bathe my dog");
+
 const mondayWork= function(work="go to the office") {
-    console.log(`This Monday, I will ${work}`);
+    return(`This Monday, I will ${work}.`);
 }
-mondayWork("work from home");
 
 
-function wrapAdjective() {
-    
+
+ function wrapAdjective(symbol) {
+     return function emphatic (something="special") {         
+    return `You are ${symbol}${something}${symbol}!`;
+     };
 }
